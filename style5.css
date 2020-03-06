@@ -1,0 +1,45 @@
+html, body {
+  height: 100%;
+  background: #fefee6;
+  font-family: 'Amiro', sans-serif;
+}
+
+.wrapper {
+  margin: 0;
+  position: absolute;
+  -webkit-transform: rotate(-90deg) translate(100%, 0);
+          transform: rotate(-90deg) translate(100%, 0);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  right: 0;
+  bottom: 2%;
+}
+.wrapper h1 {
+  color: #E42149;
+  text-transform: uppercase;
+  font-size: 18vh;
+  margin: 0;
+  position: relative;
+  line-height: 1;
+  letter-spacing: -0.3rem;
+}
+.wrapper h1:before {
+  content: attr(data-heading);
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #FFF146;
+  -webkit-transform: translate(2.25%, 0);
+          transform: translate(2.25%, 0);
+  mix-blend-mode: multiply;
+}
+.wrapper h1:after {
+  content: attr(data-heading);
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #0091E5;
+  -webkit-transform: translate(-2.25%, 0);
+          transform: translate(-2.25%, 0);
+  mix-blend-mode: multiply;
+}
